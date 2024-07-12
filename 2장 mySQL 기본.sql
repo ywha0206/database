@@ -26,7 +26,7 @@ select * from `user1`;
 select * from `user1` where `uid`='A101';
 select * from `user1` where `name` = '김춘추';
 select * from `user1` where `age` < 30;
-select * from  where `age` >= 30;
+select * from `user1` where `age` >= 30;
 select `uid`,`name`,`age` from `user1`;
 
 #실습 2-4. 데이터 수정
