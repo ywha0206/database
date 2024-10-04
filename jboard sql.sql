@@ -2,10 +2,15 @@
 #5과목 - 데이터 베이스 
 #작업 3. 각 테이블에 샘플 데이터를 저장하시오.
 insert into `user` (`uid`,`pass`,`name`,`nick`,`email`,`hp`,`role`,`zip`,`addr1`,`addr2`,`regip`,`regDate`)
-values ('a101','abc1234!','김유신','유신','yusin@naver.com','010-1234-1001','USER','12345','부산광역시','123-45','0.0.0.0.1',now());
+values ('a101','abc1234!','김유신','유신','yusin@naver.com','010-1234-1002','USER','12345','부산광역시','123-45','0.0.0.0.1',now());
 
 insert into `article` (`cate`,`title`,`content`,`comment`,`file`,`hit`,`writer`,`regip`,`rdate`)
 values ('free','안녕하세요','테스트 글쓰기입니다.',0,0,0,'a101','0.0.0.0.1',now());
+insert into `article` (`cate`,`title`,`content`,`comment`,`file`,`hit`,`writer`,`regip`,`rdate`)
+values ('free','안녕하세요','테스트 글쓰기입니다.',0,0,0,'a101','0.0.0.0.1',now());
+insert into `article` (`cate`,`title`,`content`,`comment`,`file`,`hit`,`writer`,`regip`,`rdate`)
+values ('free','게시판 프로젝트','테스트 글쓰기입니다.',0,0,0,'a101','0.0.0.0.1',now());
+
 
 insert into `comment` (`parent`,`content`,`writer`,`regip`,`rdate`)
 values (8,'샘플 댓글입니다.','a101','0.0.0.0.1',now());
